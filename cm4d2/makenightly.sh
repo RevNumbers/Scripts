@@ -6,3 +6,5 @@ source build/envsetup.sh
 make clobber
 brunch droid2
 cp -f /home/cm4d2/out/target/product/droid2/cyanogen_droid2-ota-eng.cm4d2.zip /mnt/server/750/nightlies/$FILENAME
+
+#This works great and produces nightlies in my nightlies folder... now all we need to do is make it upload to a fileserver
