@@ -19,3 +19,7 @@ git fetch http://review.cyanogenmod.com/p/CyanogenMod/android_packages_apps_CMPa
 #Separate Timeout for Screen and Security Lock http://review.cyanogenmod.com/6527
 cd /home/cm4d2/packages/apps/CMParts/
 git fetch http://review.cyanogenmod.com/p/CyanogenMod/android_packages_apps_CMParts refs/changes/27/6527/1 && git cherry-pick FETCH_HEAD
+
+#Fix hijack execution and logging (hijack logging flag must be uncommented in the BoardConfig.mk line 100) http://review.cyanogenmod.com/#change,7279
+cd /home/cm4d2/device/droid2/hijack
+git fetch http://review.cyanogenmod.com/p/CyanogenMod/android_device_motorola_droid2 refs/changes/79/7279/1 && git cherry-pick FETCH_HEAD
