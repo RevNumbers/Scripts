@@ -31,6 +31,9 @@ elif [[ "$BUILDDEVICE" = "venus2" ]]
   then
     CMNAME="CM4Dpro"
     CMFILENAME="dp"
+  else
+    echo "Invalid device!  Make sure the device is the first argument passed."
+    exit
 fi
 }
 
