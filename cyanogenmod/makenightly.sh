@@ -31,20 +31,20 @@ if [[ "$ARGS" =~ "nosync" ]]
 fi
 
 cd /home/cm4d2
-if test -n $NOSYNC
+if test -n "$NOSYNC"
   then
     echo "You have chosen not to sync before build"
   else
     syncrepo
 fi
 setupenv
-if test -n $NOPATCHES
+if test -n "$NOPATCHES"
   then
     echo "You have chosen not to apply any patches"
   else
     applypatches
 fi
-if test -n $NOCLOBBER
+if test -n "$NOCLOBBER"
   then
     echo "You have chosen not to clean the tree before build"
   else
@@ -55,7 +55,7 @@ echo "             Starting build for $BUILDDEVICE              "
 echo "##########################################################"
 CYANOGEN_NIGHTLY=true brunch $BUILDDEVICE
 
-if test -n $NOUPLOAD
+if test -n "$NOUPLOAD"
   then
     "You have chosen not to upload/post"
   else
